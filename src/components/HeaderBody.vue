@@ -73,4 +73,60 @@
     text-transform: uppercase;
   }
 }
+
+@media(max-width: 1400px) { // Narrow screen or big tablet
+  .header_wrapper {
+    max-width: 1000px;
+  }
+}
+
+@media(max-width: 1000px) { // Tiny screen or standard tablet
+  .header {
+    &_wrapper {
+      max-width: 600px;
+    }
+
+    &_title {
+      font-size: 83px;
+    }
+
+    &_subtitle {
+      font-size: 37px;
+    }
+  }
+}
+
+@media(max-width: 600px) { // Mobile phone
+  .header {
+    &_wrapper {
+      max-width: 300px;
+    }
+
+    &_title {
+      font-size: 53px;
+      line-height: 65px;
+    }
+
+    &_subtitle {
+      font-size: 17px;
+    }
+  }
+}
+
+@media(max-width: 300px) { // Tiny mobile phone
+  .header {
+    &_wrapper {
+      max-width: 150px;
+    }
+
+    &_title {
+      font-size: 23px;
+      line-height: 45px
+    }
+
+    &_subtitle {
+      font-size: 14px;
+    }
+  }
+}
 </style>

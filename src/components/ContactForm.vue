@@ -102,7 +102,7 @@
     }
 
     &wrapper {
-      margin-top: 60px;
+      margin-top: 30px;
       display: flex;
       justify-content: center;
     }
@@ -113,6 +113,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
   }
 
   &_form {
@@ -216,6 +217,8 @@
     &wrapper {
       height: 56px;
       margin-top: 15px;
+      display: flex;
+      align-items: center;
 
       &--top {
         margin-top: 0;
@@ -261,6 +264,191 @@
       align-items: left;
     }
   }
-  
+}
+
+@media(max-width: 1400px) { // Narrow screen or big tablet
+  .contact {
+    &_wrapper {
+      width: 1000px;
+    }
+
+    &_form {
+      padding: 25px;
+      border-radius: 35px;
+    }
+
+    &_field {
+      margin-top: 20px;
+      width: 380px;
+      border-radius: 25px;
+      height: 50px;
+      padding: 15px 10px;
+      font-size: 15px;
+
+      &--top {
+        margin-top: 2px;
+      }
+
+      &--long {
+        border-radius: 30px;
+        height: 250px;
+        font-size: 12px;
+      }
+    }
+
+    &_submit {
+      margin-top: 28px;
+      width: 380px;
+      max-height: 53px;
+      border-radius: 40px;
+    }
+
+    &_separator {
+      height: 420px;
+    }
+
+    &_social {
+      font-size: 34px;
+
+      &s {
+        width: 430px;
+      }
+    }
+  }
+}
+
+@media(max-width: 1000px) { // Tiny screen or standard tablet
+  .contact {
+    height: 1150px;
+
+    &_wrapper {
+      width: 600px;
+    }
+
+    &_title {
+      font-size: 58px;
+
+      &wrapper {
+        margin-top: 0;
+      }
+    }
+
+    &_content {
+      margin-top: 80px;
+      flex-direction: column;
+      height: 863px;
+    }
+
+    &_separator {
+      width: 420px;
+      height: 3px;
+    }
+  }
+}
+
+@media(max-width: 600px) { // Mobile phone
+  .contact {
+    height: 900px;
+    width: 100%;
+
+    &_wrapper {
+      width: 300px;
+    }
+
+    &_title {
+      font-size: 31px;
+
+      &wrapper {
+        margin-top: 80px;
+      }
+    }
+
+    &_content {
+      margin-top: 50px;
+      flex-direction: column;
+      height: 663px;
+    }
+
+    &_form {
+      padding: 15px;
+      border-radius: 25px;
+    }
+
+    &_field {
+      margin-top: 20px;
+      width: 230px;
+      border-radius: 25px;
+      height: 50px;
+      padding: 15px 10px;
+      font-size: 15px;
+
+      &--top {
+        margin-top: 2px;
+      }
+
+      &--long {
+        border-radius: 30px;
+        height: 250px;
+        font-size: 12px;
+      }
+    }
+
+    &_submit {
+      margin-top: 28px;
+      width: 230px;
+      max-height: 53px;
+      border-radius: 40px;
+      padding: 15px 0;
+    }
+
+    &_separator {
+      width: 240px;
+      height: 3px;
+    }
+
+    &_social {
+      margin-left: 30px;
+      font-size: 21px;
+      line-height: 22px;
+
+      &wrapper {
+        height: 26px;
+        margin-top: 10px;
+
+        &--top {
+          margin-top: 0;
+        }
+      }
+
+      &--linkedin::before {
+        height: 20px;
+        width: 20px;
+        left: -25px;
+      }
+
+      &--github::before {
+        border-radius: 30px;
+        height: 20px;
+        width: 20px;
+        left: -25px;
+      }
+
+      &--email::before {
+        height: 20px;
+        width: 20px;
+        left: -25px;
+      }
+
+      &s {
+        width: 230px;
+      }
+    }
+  }
+}
+
+@media(max-width: 300px) { // Tiny mobile phone
+  .contact {
+    display: none;
+  }
 }
 </style>

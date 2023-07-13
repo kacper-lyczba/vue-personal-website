@@ -34,6 +34,8 @@
   --color-text: var(--vt-c-text-dark-2);
 
   --section-gap: 160px;
+  
+  color-scheme: dark;
 }
 
 *,

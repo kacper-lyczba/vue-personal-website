@@ -96,6 +96,30 @@ export default {
     min-height: 0;
     margin: 20px;
     position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 2px;
+      left: -20px;
+      top: 0;
+      border-radius: 10px;
+      background-color: rgb(42, 9, 80);
+      box-shadow: 0 0 15px 5px rgb(42, 9, 80);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 2px;
+      right: -20px;
+      bottom: 0;
+      border-radius: 10px;
+      background-color: rgb(42, 9, 80);
+      box-shadow: 0 0 15px 5px rgb(42, 9, 80);
+    }
     
     &-image {
       width: 100%;
@@ -192,6 +216,172 @@ export default {
         }
       }
     }
+  }
+}
+
+@media(max-width: 1400px) { // Narrow screen or big tablet
+  .projects {
+    &_wrapper {
+      width: 1000px;
+    }
+
+    &_example {
+      margin: 15px;
+
+      &-text {
+        &-title {
+          font-size: 20px;
+        }
+
+        &-subtitle {
+          font-size: 17.4px;
+        }
+      }
+
+      &s-buttontext {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media(max-width: 1000px) { // Tiny screen or standard tablet
+  .projects {
+    &_wrapper {
+      width: 600px;
+    }
+
+    &_title {
+      font-size: 58px;
+    }
+
+    &_example {
+      margin: 5px 15px;
+      
+      &-image {
+        padding: 6px;
+
+        &wrapper {
+          max-height: 110px;
+        }
+      }
+
+      &-text {
+        &-title {
+          font-size: 16px;
+        }
+
+        &-subtitle {
+          font-size: 13.4px;
+          text-align: center;
+        }
+      }
+
+      &s {
+        &-window {
+          margin-top: 58px;
+          height: 500px;
+          border-radius: 27px;
+        }
+
+        &-buttontext {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 600px) { // Mobile phone
+  .projects {
+    height: 1400px;
+
+    &_wrapper {
+      width: 300px;
+      margin-top: 60px;
+    }
+
+    &_title {
+      font-size: 35px;
+    }
+
+    &_example {
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row: auto;
+
+      &::before {
+        height: 2px;
+        width: 100%;
+        left: 0;
+        top: -15px;
+      }
+
+      &::after {
+        height: 2px;
+        width: 100%;
+        right: 0;
+        bottom: 0px;
+      }
+      
+      &-image {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+
+        &wrapper {
+          max-height: 156px;
+        }
+      }
+
+      &-text {
+        &-title {
+          font-size: 17px;
+        }
+
+        &-subtitle {
+          font-size: 14.4px;
+          text-align: center;
+        }
+      }
+
+      &s {
+        &-window {
+          margin-top: 58px;
+          width: 80%;
+          height: 1250px;
+          border-radius: 30px;
+        }
+
+        &-wrapper {
+          height: 95%;
+          width: 90%;
+          grid-template-rows: repeat(3, 1fr);
+          grid-template-columns: repeat(8, 1fr);
+        }
+
+        &-button {
+          grid-row: 4;
+          grid-column-start: 1;
+          grid-column-end: 9;
+
+          &text {
+            font-size: 24px;
+          }
+
+          &:hover {
+            transform: scale(101%);
+            border: #18092b solid 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 300px) { // Tiny mobile phone
+  .projects {
+    display: none;
   }
 }
 </style>

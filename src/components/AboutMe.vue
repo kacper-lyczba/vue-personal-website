@@ -246,4 +246,196 @@ export default {
     }
   }
 }
+
+@media(max-width: 1400px) { // Narrow screen or big tablet
+  .about {
+    &_wrapper {
+      max-width: 1000px;
+    }
+
+    &_content {
+      max-width: 1000px;
+    }
+
+    &_image {
+      width: 300px;
+      height: 300px;
+    }
+
+    &_description {
+      max-width: 581px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media(max-width: 1000px) { // Tiny screen or standard tablet
+  .about {
+    height: 800px;
+
+    &_wrapper {
+      max-width: 600px;
+    }
+
+    &_title {
+      font-size: 58px;
+    }
+
+    &_content {
+      max-width: 600px;
+    }
+
+    &_image {
+      width: 160px;
+      height: 160px;
+    }
+
+    &_description {
+      max-width: 341px;
+      font-size: 11px;
+    }
+    
+    &_tech {
+      &nologystack {
+        width: 400px;
+        padding: 16px;
+        border-radius: 35px;
+      }
+
+      &title {
+        font-size: 43.8px;
+        line-height: 44px;
+      }
+
+      &item {
+        margin-bottom: 20px;
+        border-radius: 25px;
+        height: 65px;
+        width: 65px;
+        
+        &-image {
+          height: 50px;
+          width: 50px;
+        }
+
+        &-text {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 600px) { // Mobile phone
+  .about {
+    height: 1400px;
+
+    &_wrapper {
+      max-width: 300px;
+    }
+
+    &_title {
+      font-size: 35px;
+    }
+
+    &_content {
+      max-width: 300px;
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    &_separator {
+      width: 55%;
+      height: 3px;
+
+      &--big {
+        width: 80%;
+      }
+    }
+
+    &_image {
+      width: 200px;
+      height: 200px;
+    }
+
+    &_description {
+      max-width: 260px;
+      font-size: 12px;
+    }
+    
+    &_tech {
+      &nologystack {
+        width: 200px;
+        padding: 12px;
+        border-radius: 25px;
+        margin-top: 50px;
+      }
+
+      &title {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media(max-width: 300px) { // Tiny mobile phone
+  .about {
+    height: 1150px;
+
+    &_wrapper {
+      max-width: 150px;
+    }
+
+    &_title {
+      font-size: 25px;
+    }
+
+    &_content {
+      max-width: 150px;
+      margin-top: 25px;
+    }
+
+    &_image {
+      width: 140px;
+      height: 140px;
+    }
+
+    &_description {
+      max-width: 260px;
+      font-size: 12px;
+    }
+    
+    &_tech {
+      &nologystack {
+        width: 120px;
+        padding: 12px;
+        border-radius: 25px;
+        margin-top: 50px;
+      }
+
+      &title {
+        font-size: 23.8px;
+        line-height: 24px;
+        text-align: center;
+      }
+
+      &item {
+        margin-bottom: 12px;
+        border-radius: 15px;
+        height: 40px;
+        width: 40px;
+        
+        &-image {
+          height: 30px;
+          width: 30px;
+          transition: transform 0.2s;
+        }
+
+        &-text {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}
 </style>
