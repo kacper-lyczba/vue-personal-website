@@ -129,4 +129,59 @@
     }
   }
 }
+
+@media(min-width: 2000px) { // 1440p
+  .header {
+    &_wrapper {
+      max-width: 2000px;
+    }
+
+    &_title {
+      font-size: 100px;
+      line-height: 110px;
+    }
+
+    &_subtitle {
+      font-size: 45px;
+    }
+  }
+}
+
+@media(min-width: 3000px) { // 4K
+  .header {
+    border-radius: 100px;
+
+    &_wrapper {
+      max-width: 3000px;
+    }
+
+    &_title {
+      font-size: 140px;
+      line-height: 150px;
+    }
+
+    &_subtitle {
+      font-size: 70px;
+    }
+  }
+}
+
+@media(min-width: 6000px) { // 8K
+  .header {
+    border-radius: 200px;
+
+    &_wrapper {
+      max-width: 6000px;
+    }
+
+    &_title {
+      font-size: 280px;
+      line-height: 300px;
+    }
+
+    &_subtitle {
+      font-size: 140px;
+    }
+  }
+}
 </style>
