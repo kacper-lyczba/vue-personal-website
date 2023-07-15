@@ -331,7 +331,7 @@ export default {
     height: 1400px;
 
     &_wrapper {
-      max-width: 300px;
+      max-width: 320px;
     }
 
     &_title {
@@ -339,7 +339,7 @@ export default {
     }
 
     &_content {
-      max-width: 300px;
+      max-width: 320px;
       flex-direction: column;
       margin-top: 30px;
     }
@@ -359,13 +359,13 @@ export default {
     }
 
     &_description {
-      max-width: 260px;
+      max-width: 270px;
       font-size: 12px;
     }
     
     &_tech {
       &nologystack {
-        width: 200px;
+        width: 220px;
         padding: 12px;
         border-radius: 25px;
         margin-top: 50px;
@@ -373,67 +373,6 @@ export default {
 
       &title {
         text-align: center;
-      }
-    }
-  }
-}
-
-@media(max-width: 300px) { // Tiny mobile phone
-  .about {
-    height: 1150px;
-
-    &_wrapper {
-      max-width: 150px;
-    }
-
-    &_title {
-      font-size: 25px;
-    }
-
-    &_content {
-      max-width: 150px;
-      margin-top: 25px;
-    }
-
-    &_image {
-      width: 140px;
-      height: 140px;
-    }
-
-    &_description {
-      max-width: 260px;
-      font-size: 12px;
-    }
-    
-    &_tech {
-      &nologystack {
-        width: 120px;
-        padding: 12px;
-        border-radius: 25px;
-        margin-top: 50px;
-      }
-
-      &title {
-        font-size: 23.8px;
-        line-height: 24px;
-        text-align: center;
-      }
-
-      &item {
-        margin-bottom: 12px;
-        border-radius: 15px;
-        height: 40px;
-        width: 40px;
-        
-        &-image {
-          height: 30px;
-          width: 30px;
-          transition: transform 0.2s;
-        }
-
-        &-text {
-          font-size: 8px;
-        }
       }
     }
   }

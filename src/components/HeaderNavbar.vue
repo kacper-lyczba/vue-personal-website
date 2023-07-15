@@ -108,7 +108,7 @@
 @media(max-width: 600px) { // Mobile phone
   .navbar {
     &_wrapper {
-      max-width: 300px;
+      max-width: 320px;
     }
 
     &_shape {
@@ -126,32 +126,6 @@
   .nav_link {
     margin-left: 10px;
     font-size: 16px;
-  }
-}
-
-@media(max-width: 300px) { // Tiny mobile phone
-  .navbar {
-    &_wrapper {
-      max-width: 150px;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    &_shape {
-      height: 20px;
-      width: 20px;
-    }
-  }
-
-  .triangle {
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 20px solid var(--vt-c-indigo);
-  }
-
-  .nav_link {
-    margin-left: 6px;
-    font-size: 12px;
   }
 }
 

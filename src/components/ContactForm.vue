@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <footer class="contact">
     <div class="contact_wrapper">
       <div class="contact_titlewrapper">
         <h1 class="contact_title">Let's get in touch</h1>
@@ -63,7 +63,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
@@ -352,11 +352,11 @@
     width: 100%;
 
     &_wrapper {
-      width: 300px;
+      width: 320px;
     }
 
     &_title {
-      font-size: 31px;
+      font-size: 30px;
 
       &wrapper {
         margin-top: 80px;

@@ -99,7 +99,7 @@
 @media(max-width: 600px) { // Mobile phone
   .header {
     &_wrapper {
-      max-width: 300px;
+      max-width: 320px;
     }
 
     &_title {
@@ -109,23 +109,6 @@
 
     &_subtitle {
       font-size: 17px;
-    }
-  }
-}
-
-@media(max-width: 300px) { // Tiny mobile phone
-  .header {
-    &_wrapper {
-      max-width: 150px;
-    }
-
-    &_title {
-      font-size: 23px;
-      line-height: 45px
-    }
-
-    &_subtitle {
-      font-size: 14px;
     }
   }
 }

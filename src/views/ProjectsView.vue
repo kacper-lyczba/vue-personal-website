@@ -1,5 +1,11 @@
+<script setup lang="ts">
+import ProjectsFull from '@/components/ProjectsFull.vue';
+import ContactForm from '@/components/ContactForm.vue';
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="Projects">
+    <ProjectsFull />
+    <ContactForm />
   </div>
 </template>
