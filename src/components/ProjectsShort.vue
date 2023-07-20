@@ -28,9 +28,9 @@ export default {
 
       <div class="projects_examples-window">
         <div class="projects_examples-wrapper">
-          <div v-for="item in projects" v-bind:key="item.image" class="projects_example">
-            <a class="projects_example-imagewrapper" v-bind:href="item.link" target="_blank">
-              <img v-bind:src="getImageUrl(item.image)" class="projects_example-image" />
+          <div v-for="item in projects" :key="item.image" class="projects_example">
+            <a class="projects_example-imagewrapper" :href="item.link" target="_blank">
+              <img :src="getImageUrl(item.image)" class="projects_example-image" />
             </a>
 
             <div class="projects_example-textwrapper">

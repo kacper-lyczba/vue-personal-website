@@ -17,8 +17,7 @@ export default {
       'HTML',
       'CSS',
       'TypeScript',
-      'JavaScript',
-      'PostgreSQL'
+      'JavaScript'
     ]);
 
     return {

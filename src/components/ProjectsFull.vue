@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 
 export default {
-  name: 'ProjectsShort',
+  name: 'ProjectsFull',
   setup() {
     const getImageUrl = (name: string) => {
       return new URL(`./ProjectThumbnails/${name}.jfif`, import.meta.url).href
@@ -28,7 +28,7 @@ export default {
       <h1 class="projectlist_title">Timeline of Notable Projects</h1>
 
       <div class="projectlist_projects">
-        <div v-for="item in projectlist" v-bind:key="item.image" class="projectlist_project">
+        <div v-for="item in projectlist" :key="item.image" class="projectlist_project">
           <div class="projectlist_projectinfo">
             <h1 class="projectlist_project-text-title">{{ item.name }}</h1>
             <h2 class="projectlist_project-text-subtitle">{{ item.description }}</h2>
@@ -44,8 +44,8 @@ export default {
             <div class="projectlist_circle"></div>
           </div>
 
-          <a class="projectlist_project-imagewrapper" v-bind:href="item.link" target="_blank">
-            <img v-bind:src="getImageUrl(item.image)" class="projectlist_project-image" />
+          <a class="projectlist_project-imagewrapper" :href="item.link" target="_blank">
+            <img :src="getImageUrl(item.image)" class="projectlist_project-image" />
           </a>
         </div>
       </div>
