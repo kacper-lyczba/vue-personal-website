@@ -4,11 +4,12 @@ import { ref } from 'vue';
 
 export const blogposts = [
   {
-    date: 'July 20, 2023',
+    monthdate: 'July 2023',
     blogposts: [
       {
         id: 'firstpost',
         image: 'Thumbnail',
+        postdate: 'July 20, 2023',
         title: 'The Site is Now Live!',
         paragraphs: [
           {
@@ -65,9 +66,9 @@ export default {
       <div class="blog_wrapper">
         <h1 class="blog_title">Blog</h1>
 
-        <div v-for="group of posts" :key="group.date" class="blog_postgroup">
+        <div v-for="group of posts" :key="group.monthdate" class="blog_postgroup">
           <h1 class="blog_postgroup-title">
-            {{ group.date }}
+            {{ group.monthdate }}
           </h1>
 
           <div class="blog_posts">
