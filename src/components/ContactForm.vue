@@ -136,7 +136,6 @@
     padding: 25px 15px;
     color: var(--vt-c-text-dark-1);
     transition: border 0.2s, box-shadow 0.2s, background-color 0.2s;
-    text-align: center;
     font-size: 15px;
     font-family: Klee One;
     -ms-overflow-style: none;

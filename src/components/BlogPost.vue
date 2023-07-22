@@ -17,7 +17,7 @@ export default {
           for (let i = 0; i < blogposts.length; i++) {
             for (let n = 0; n < blogposts[i].blogposts.length; n++) {
               if (blogposts[i].blogposts[n].id === id) {
-                date = ref(blogposts[i].date);
+                date = ref(blogposts[i].blogposts[n].postdate);
 
                 return blogposts[i].blogposts[n];
               }
