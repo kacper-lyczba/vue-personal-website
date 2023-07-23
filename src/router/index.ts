@@ -7,29 +7,29 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
     },
     {
       path: '/projects',
       name: 'projects',
-      component: () => import('../views/ProjectsView.vue')
+      component: () => import('../views/ProjectsView.vue'),
     },
     {
       path: '/blog',
       name: 'blog',
-      component: () => import('../views/BlogView.vue')
+      component: () => import('../views/BlogView.vue'),
     },
     {
       path: '/blog/:id',
       name: 'blogpost',
       component: () => import('../components/BlogPost.vue'),
-      props: true
+      props: true,
     }
   ]
 })
 
 router.beforeEach(() => {
-  window.scrollTo(0, 0)
+  window.scrollTo(0, 0);
 })
 
 export default router
