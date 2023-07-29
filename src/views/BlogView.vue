@@ -6,6 +6,35 @@ export const blogposts = [
   {
     monthdate: 'July 2023',
     blogposts: [
+    {
+        id: 'mediaUpdate',
+        image: 'Thumbnail',
+        postdate: 'July 29, 2023',
+        title: 'Blog Media Update',
+        paragraphs: [
+          {
+            header: 'Hello World',
+            content: 'Another week, another blog post; there has not been very many changes this week, however, let\'s talk about a new feature I have implemented to the Blog. Namely...',
+            media: [],
+            mediaCaptions: [],
+            mediaTypes: [],
+          },
+          {
+            header: 'Gifs',
+            content: 'The Blog is not fully capable of displaying gifs on the page, just like this random gif I found! This might not have been very difficult to implement, however, I am still proud of the result.',
+            media: ['space'],
+            mediaCaptions: ['Random gif of \'space\' [800x300]'],
+            mediaTypes: ['gif'],
+          },
+          {
+            header: 'And Videos',
+            content: 'While I was at it, I also added support for embedding videos from services like YouTube. To commemorate this occasion, have a nice song to listen to.',
+            media: ['https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ'],
+            mediaCaptions: ['An obvious RickRoll [YouTube]'],
+            mediaTypes: ['video'],
+          },
+        ],
+      },
       {
         id: 'firstpost',
         image: 'Thumbnail',
@@ -15,26 +44,30 @@ export const blogposts = [
           {
             header: 'Hello World',
             content: 'This website is dedicated to my career and hobby, as well as my growth within it; software development. On it, I will list important information about me, the projects I worked and am working on, as well as other things I find interesting! There is already a wealth of information in the Home/About and Project tabs, so make sure to check those out!',
-            images: ['AboutPage'],
-            imageCaptions: ['The site\'s About page [1903x940]'],
+            media: ['AboutPage'],
+            mediaCaptions: ['The site\'s About page [1903x940]'],
+            mediaTypes: ['img'],
           },
           {
             header: 'About Me',
             content: 'I am a young, passionate Full Stack Developer; though you probably already know that from my About page. I am dedicated to my work, and I genuinely love programming. There is just an unexplainable satisfaction when things you make end up working... but don\'t let me bore you with my obsession haha! As of writing this, I specialise in React.js and Vue.js, though expect that list to increase with time; innovation never stops, after all!',
-            images: ['AboutMe'],
-            imageCaptions: ['Information about me [1410x768]'],
+            media: ['AboutMe'],
+            mediaCaptions: ['Information about me [1410x768]'],
+            mediaTypes: ['img'],
           },
           {
             header: 'My Projects',
             content: 'As you have most likely noticed by now, the Projects tab of my website will take you on a short trip through my past projects; I will update that page whenever I start any new projects as well. The projects are sorted from oldest to latest, so if you want to trace back the path I have been taking lately, feel free to take a look!',
-            images: ['Projects'],
-            imageCaptions: ['The site\'s Projects page [1898x931]'],
+            media: ['Projects'],
+            mediaCaptions: ['The site\'s Projects page [1898x931]'],
+            mediaTypes: ['img'],
           },
           {
             header: 'The Blog',
             content: 'So... the Home/About page has information about me, the Projects page lists my projects... what is the blog for, then? At the time of writing, I am planning to use it to post weekly about what I am doing, what I found interesting, as well as talk about my past projects in a little bit more detail; for example about the challenges they brought, things that surprised me, or lessons they taught me which I will never forget. For now this might be the only post, but that will change for sure!',
-            images: [],
-            imageCaptions: ['The site\'s Projects page [1898x931]'],
+            media: [],
+            mediaCaptions: ['The site\'s Projects page [1898x931]'],
+            mediaTypes: ['img'],
           }
         ],
       }
