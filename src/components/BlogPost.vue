@@ -9,8 +9,24 @@ export default {
     setup() {
         let date;
 
-        const getImageUrl = (postName: string, imageName: string) => {
-            return new URL(`./BlogImages/${postName}/${imageName}.jpg`, import.meta.url).href;
+        const getImageUrl = (postName: string, mediaName: string, mediaType: string) => {
+          switch (mediaType) {
+            case 'img': {
+              return new URL(`./BlogImages/${postName}/${mediaName}.jpg`, import.meta.url).href;
+            }
+
+            case 'gif': {
+              return new URL(`./BlogImages/${postName}/${mediaName}.gif`, import.meta.url).href;
+            }
+
+            case 'video': {
+              return new URL(mediaName).href;
+            }
+
+            default: {
+              throw new Error('Unknown media type')
+            }
+          }
         };
 
         const findPost = (id: string) => {
@@ -63,12 +79,27 @@ export default {
             {{ paragraph.content }}
           </div>
 
-          <div class="blogpost_imagecontainer" v-for="image, index in paragraph.images" :key="`${paragraph.header}_${image}`">
+          <div class="blogpost_imagecontainer" v-for="mediaItem, index in paragraph.media" :key="`${paragraph.header}_${mediaItem}`">
             <div class="blogpost_imagewrapper">
-              <img class="blogpost_image" :src="getImageUrl(post.id, image)" />
+              <img
+                class="blogpost_image"
+                v-if="paragraph.mediaTypes[index] !== 'video'"
+                :src="getImageUrl(post.id, mediaItem, paragraph.mediaTypes[index])"
+              />
+
+              <iframe
+                height="350"
+                class="blogpost_image"
+                v-if="paragraph.mediaTypes[index] === 'video'"
+                :src="getImageUrl('', mediaItem, 'video')"
+                :title="paragraph.mediaCaptions[index]"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
 
               <div class="blogpost_imagecaption">
-                {{ paragraph.imageCaptions[index] }}
+                {{ paragraph.mediaCaptions[index] }}
               </div>
             </div>
           </div>
