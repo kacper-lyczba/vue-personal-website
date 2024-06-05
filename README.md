@@ -1,6 +1,6 @@
 # Personal Portfolio Website (Vue 3)
 
-Personal website, currently deployed [here](https://kacper-lyczba.github.io/vue-personal-website/).
+Personal website, currently not deployed due to domain expiration.
 
 ## Documentation
 
